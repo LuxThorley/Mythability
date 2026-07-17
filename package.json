@@ -1,0 +1,22 @@
+{
+  "name": "mythability-scroll-pdf",
+  "version": "1.8.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^7.9.0",
+    "astronomy-engine": "^2.1.19",
+    "next": "^13.4.12",
+    "next-auth": "^4.24.0",
+    "pdfkit": "^0.13.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "stripe": "^12.18.0",
+    "three": "^0.180.0",
+    "uuid": "^9.0.0"
+  }
+}

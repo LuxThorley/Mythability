@@ -1,0 +1,42 @@
+app = "mythability"
+
+primary_region = "fra"  # Primary: Frankfurt (Europe)
+
+[build]
+  builder = "heroku/builder:22"  # Updated to latest supported builder
+
+[deploy]
+  strategy = "immediate"
+
+[env]
+  NODE_ENV = "production"
+
+[experimental]
+  auto_rollback = true
+
+[[services]]
+  internal_port = 3000
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+
+  [[services.tcp_checks]]
+    interval = 10000
+    timeout = 2000
+    grace_period = "5s"
+    restart_limit = 0
+
+[scale]
+  count = 3  # 3 instances total
+
+[http_service]
+  auto_start_machines = true
+  auto_stop_machines = true
+  min_machines_running = 1
+  processes = ["app"]
