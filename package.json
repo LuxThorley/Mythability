@@ -2,12 +2,12 @@
   "name": "mythability-scroll-pdf",
   "version": "1.8.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "start": "next start"
+ "scripts": {
+  "dev": "next dev",
+  "build": "opennextjs-cloudflare build",
+  "preview": "opennextjs-cloudflare preview",
+  "deploy": "opennextjs-cloudflare deploy",
+  "start": "next start"
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.20.1",
