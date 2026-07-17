@@ -10,13 +10,17 @@
   "dependencies": {
     "@stripe/stripe-js": "^7.9.0",
     "astronomy-engine": "^2.1.19",
-    "next": "^13.4.12",
+    "next": "16.2.10",
     "next-auth": "^4.24.0",
     "pdfkit": "^0.13.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
     "stripe": "^12.18.0",
     "three": "^0.180.0",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-next": "16.2.10"
   }
 }
