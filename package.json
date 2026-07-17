@@ -8,10 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@panva/hkdf": "^1.2.1",
     "@stripe/stripe-js": "^7.9.0",
     "astronomy-engine": "^2.1.19",
+    "jose": "^6.2.3",
     "next": "16.2.10",
-    "next-auth": "^4.24.0",
+    "next-auth": "^4.24.14",
     "pdfkit": "^0.13.0",
     "react": "19.2.7",
     "react-dom": "19.2.7",
